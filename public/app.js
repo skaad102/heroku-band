@@ -5,11 +5,12 @@ socket.on('connect', () =>{
 })
 
 socket.on('disconnect', () =>{
-    console.log('Cliente desconc 😒');
+    console.log('Cliente desconct 😒');
 })
 
-socket.emit('mesaje' ,{
-    title : 'ping'
-})
+// socket.emit('mesaje' ,{
+//     title : 'ping'
+// })
 
-socket.on('pong', data => console.log(data))
+// socket.on('pong', data => console.log(data))
+socket.on('saludo', data => console.log(data))
